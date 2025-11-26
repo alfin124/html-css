@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Style dengan CSS Internal</title> 
+     
+    <!-- Bagian Internal atau Embedded Style Sheet --> 
+    <style> 
+        /* Mengatur font dasar dan latar belakang untuk keseluruhan halaman */ 
+        body { 
+            /* Font diset ke default sistem jika Inter tidak tersedia */ 
+            font-family: Arial, Helvetica, sans-serif; 
+            background-color: #f0f4f8; /* Tetap pertahankan warna latar belakang yang bersih */ 
+            padding: 15px; 
+        } 
+ 
+        /* Styling untuk elemen Paragraf (<p>) */ 
+        p { 
+            /* 1. Warna tulisan merah */ 
+            color: red; 
+            /* 2. Latar belakang kuning */ 
+            background-color: yellow; 
+            /* 3. Border tipis berwarna #a9a9a9 (abu-abu gelap) */ 
+            border: 1px solid #a9a9a9; 
+            /* 4. Jarak (Margin) 15 piksel */ 
+            margin: 15px; 
+            padding: 10px; /* Tambahkan padding agar teks tidak menempel border */ 
+            border-radius: 4px; /* Sudut sedikit melengkung */ 
+        } 
+ 
+        /* Styling untuk Teks Link (<a>) */ 
+        a { 
+            /* Warna Teks link putih */ 
+            color: white; 
+            /* Tidak bergaris bawah */ 
+            text-decoration: none; 
+            /* Gaya tambahan agar link terlihat seperti tombol */ 
+            background-color: #1d4ed8; /* Biru tua */ 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            display: inline-block; 
+            transition: background-color 0.2s, color 0.2s; 
+        } 
+ 
+        /* Styling untuk Link saat dilewati mouse (hover) */ 
+        a:hover { 
+            /* Warna teks link berubah menjadi kuning */ 
+            color: yellow; 
+            background-color: #1e3a8a; /* Biru lebih gelap saat hover */ 
+        } 
+ 
+         
+        h1 { 
+            font-size: 24px; 
+            font-weight: bold; 
+            margin-bottom: 16px; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <!-- Wadah dibuat secara manual menggunakan CSS agar tetap rapi --> 
+    <div class="container">  
+        <h1>Hasil Latihan HTML & CSS Internal</h1> 
+ 
+        <p>Paragrap ini akan ditampilkan dengan pengaturan gaya menggunakan CSS. Paragrap 
+merupakan salah satu dari elemen berjenis block yang akan tampil di browser memenuhi area 
+dari ujung kiri sampai kanan layar.</p> 
+         
+        <!-- Pindah margin dari Tailwind class ke Internal CSS di paragraf --> 
+        <p>Elemen block lainnya adalah heading (h1-h6) dan paragraf (p).</p> 
+         
+        <a href="http://google.com">Mengarah ke GOOGLE</a> 
+         
+    </div> 
+ 
+</body> 
+</html> 
